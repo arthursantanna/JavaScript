@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="WR Kits">
+<link rel="stylesheet" href="style.css">
+<title>Dispenser Automático</title>
+
+<script src="jquery.js"></script>
+
+<script>
+
+$.ajaxSetup({timeout:1000});
+
+
+function mouseUpSr1(angle)
+{
+	TextVar = myform2.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80";
+	$.get( ArduinoVar, { "sr1": angle })	;
+	{Connection: close};
+}
+function mouseUpSr2(angle)
+{
+	TextVar = myform2.inputbox.value;
+	ArduinoVar = "http://" + TextVar + ":80";
+	$.get( ArduinoVar, { "sr2": angle })	;
+	{Connection: close};
+}
+
+</script>
+
+</head>
+
+
+<body>
+	
+	<header>
+		<div>
+			<img src="imgs/logo.png" alt="Logo">
+		</div>
+		<nav>
+			<ul>
+				<li>Inicio</li>
+				<li>Sobre</li>
+				<li>Projeto</li>
+				<li>Contato</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="home">
+		<section id="home">
+			<div class="imgCat">
+				<img src="imgs/cat.png" alt="Gato" id="cat">
+			</div>
+			<div class="formulario">
+				<h1><strong>Dispenser Automático</strong></h1>
+				
+				<div class="form">
+					<FORM NAME="myform2" ACTION="" METHOD="GET">
+						<h2> Host WiFi: </h2>
+						<INPUT TYPE="text" NAME="inputbox" VALUE="192.172.0.104">
+					</FORM>
+				</div>
+					
+					
+					<h2>     Servo 1 </h2> 
+					<input type="range" min="15" max="175" onmouseup="mouseUpSr1(this.value)" />
+					<h2>     Servo 2 </h2>
+					<input type="range" min="15" max="175" onmouseup="mouseUpSr2(this.value)" />
+			</div>
+			<div class="formulario2">
+
+			</div>
+		</section>
+	</div>
+	<section class="carrossel">
+		<div class="carousel" aria-label="Gallery">
+			<ol class="carousel__viewport">
+				<li id="carousel__slide1"
+					tabindex="0"
+					class="carousel__slide">
+				<div class="carousel__snapper">
+					<a href="#carousel__slide4"
+					class="carousel__prev">Go to last slide</a>
+					<a href="#carousel__slide2"
+					class="carousel__next">Go to next slide</a>
+				</div>
+				</li>
+				<li id="carousel__slide2"
+					tabindex="0"
+					class="carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide1"
+					class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide3"
+					class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide3"
+					tabindex="0"
+					class="carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide2"
+					class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide4"
+					class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide4"
+					tabindex="0"
+					class="carousel__slide">
+				<div class="carousel__snapper"></div>
+				<a href="#carousel__slide3"
+					class="carousel__prev">Go to previous slide</a>
+				<a href="#carousel__slide1"
+					class="carousel__next">Go to first slide</a>
+				</li>
+			</ol>
+			<aside class="carousel__navigation">
+				<ol class="carousel__navigation-list">
+				<li class="carousel__navigation-item">
+					<a href="#carousel__slide1"
+					class="carousel__navigation-button">Go to slide 1</a>
+				</li>
+				<li class="carousel__navigation-item">
+					<a href="#carousel__slide2"
+					class="carousel__navigation-button">Go to slide 2</a>
+				</li>
+				<li class="carousel__navigation-item">
+					<a href="#carousel__slide3"
+					class="carousel__navigation-button">Go to slide 3</a>
+				</li>
+				<li class="carousel__navigation-item">
+					<a href="#carousel__slide4"
+					class="carousel__navigation-button">Go to slide 4</a>
+				</li>
+				</ol>
+			</aside>
+		</div>
+	</section>
+</body>
+</html>
