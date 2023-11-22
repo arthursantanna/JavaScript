@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="author" content="WR Kits">
 <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
 <title>Dispenser Automático</title>
 
 <script src="jquery.js"></script>
@@ -51,7 +52,7 @@ function mouseUpSr2(angle)
 	<div class="home">
 		<section id="home">
 			<div class="imgCat">
-				<img src="imgs/cat.png" alt="Gato" id="cat">
+				<img src="imgs/dog.png" alt="Gato" id="cat">
 			</div>
 			<div class="formulario">
 				<h1><strong>Dispenser Automático</strong></h1>
@@ -69,73 +70,103 @@ function mouseUpSr2(angle)
 					<h2>     Servo 2 </h2>
 					<input type="range" min="15" max="175" onmouseup="mouseUpSr2(this.value)" />
 			</div>
-			<div class="formulario2">
-
-			</div>
+			<div class="formulario">
+                <div class="form">
+					<FORM NAME="myform2" ACTION="" METHOD="GET">
+						<h2> Host WiFi: </h2>
+						<INPUT TYPE="text" NAME="inputbox" VALUE="192.172.0.104">
+					</FORM>
+				</div>
+                <h3 class="quant">Quantidade de ração:</h3>
+                <div class="opcao">
+                    <label for="baixa">Baixa</label>
+                    <input type="radio" id="media" name="quantidadeRacao">
+                </div>
+                <div class="opcao">
+                    <label for="media">Media</label>
+                    <input type="radio" id="media" name="quantidadeRacao">
+                </div>
+                <div class="opcao">
+                    <label for="alta">Alta</label>
+                    <input type="radio" id="alta" name="quantidadeRacao">
+                </div>
+                <label for="tempo"><h3 class="tempo">A cada quantas horas a ração deve cair?</h3></label>
+                <input type="text" name="tempo" id="tempo" placeholder="ex: 4">
+            </div>
 		</section>
 	</div>
-	<section class="carrossel">
-		<div class="carousel" aria-label="Gallery">
-			<ol class="carousel__viewport">
-				<li id="carousel__slide1"
-					tabindex="0"
-					class="carousel__slide">
-				<div class="carousel__snapper">
-					<a href="#carousel__slide4"
-					class="carousel__prev">Go to last slide</a>
-					<a href="#carousel__slide2"
-					class="carousel__next">Go to next slide</a>
-				</div>
-				</li>
-				<li id="carousel__slide2"
-					tabindex="0"
-					class="carousel__slide">
-				<div class="carousel__snapper"></div>
-				<a href="#carousel__slide1"
-					class="carousel__prev">Go to previous slide</a>
-				<a href="#carousel__slide3"
-					class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide3"
-					tabindex="0"
-					class="carousel__slide">
-				<div class="carousel__snapper"></div>
-				<a href="#carousel__slide2"
-					class="carousel__prev">Go to previous slide</a>
-				<a href="#carousel__slide4"
-					class="carousel__next">Go to next slide</a>
-				</li>
-				<li id="carousel__slide4"
-					tabindex="0"
-					class="carousel__slide">
-				<div class="carousel__snapper"></div>
-				<a href="#carousel__slide3"
-					class="carousel__prev">Go to previous slide</a>
-				<a href="#carousel__slide1"
-					class="carousel__next">Go to first slide</a>
-				</li>
-			</ol>
-			<aside class="carousel__navigation">
-				<ol class="carousel__navigation-list">
-				<li class="carousel__navigation-item">
-					<a href="#carousel__slide1"
-					class="carousel__navigation-button">Go to slide 1</a>
-				</li>
-				<li class="carousel__navigation-item">
-					<a href="#carousel__slide2"
-					class="carousel__navigation-button">Go to slide 2</a>
-				</li>
-				<li class="carousel__navigation-item">
-					<a href="#carousel__slide3"
-					class="carousel__navigation-button">Go to slide 3</a>
-				</li>
-				<li class="carousel__navigation-item">
-					<a href="#carousel__slide4"
-					class="carousel__navigation-button">Go to slide 4</a>
-				</li>
-				</ol>
-			</aside>
-		</div>
-	</section>
+    <section id="projetos">
+        <div class="carrossel">
+            <div class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4"
+                        class="carousel__prev">Go to last slide</a>
+                        <a href="#carousel__slide2"
+                        class="carousel__next">Go to next slide</a>
+                    </div>
+                    </li>
+                    <li id="carousel__slide2"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                        class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide4"
+                        tabindex="0"
+                        class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                        class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1"
+                        class="carousel__next">Go to first slide</a>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1"
+                        class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2"
+                        class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3"
+                        class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4"
+                        class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                    </ol>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <ul>
+            <li>teste</li>
+        </ul>
+        <ul>
+            <li>teste</li>
+        </ul>
+    </section>
 </body>
 </html>
